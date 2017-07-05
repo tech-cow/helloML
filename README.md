@@ -3,7 +3,7 @@
   <br>
   <a><img src="https://github.com/yuzhoujr/helloML/blob/master/logo.jpg" alt="Temp Logo" width="200"></a>
   <br>
-  Electron Markdownify
+    StockMe
   <br>
 </h1>
 
