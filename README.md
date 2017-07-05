@@ -70,11 +70,6 @@ This software uses code from several open source packages.
 - [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
 - [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS -->
 
-#### License
-
-MIT
-
----
 
 #### License
 
