@@ -1,6 +1,9 @@
 import pandas as pd
-import quandl
-import math
+import quandl, math
+import numpy as np
+from sklearn import preprocessing, cross_validation, svm
+from sklearn.linear_model import LinearRegression
+
 
 '''
 Using quandl.get to get a pandas data frame
@@ -40,6 +43,16 @@ forecast_out = int(math.ceil(0.01*len(df)))
 
 # Setting label feature to predict its Closing price 1% days into the future
 df['label'] = df[forecast_col].shift(-forecast_out)
+
+
+x = np.array(df.drop(['label'], 1))
+y = np.array(df['label'])
+
+x = preprocessing.scale(x)
+
+
+
+
 
 
 # Display
