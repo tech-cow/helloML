@@ -23,8 +23,8 @@
 
 ## Key Features
 
-* LivePreview - Make changes, See changes
-  - Instantly see what your Markdown documents look like in HTML as you create them.
+* Lorem - Cras sed dui iaculis
+  - luctus est luctus, egestas quam. Donec mi nisi, blandit vel lobortis in, gravida eget turpis. Curabitur sodales accumsan viverra
 
 
 
