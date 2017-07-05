@@ -51,9 +51,6 @@ This software uses code from several open source packages.
 - [Node.js](https://nodejs.org/)
 
 
-## Related
-
-[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
 
 ## You may also like...
 
@@ -66,6 +63,6 @@ MIT
 
 ---
 
-> [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
-> GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
-> Twitter [@amit_merchant](https://twitter.com/amit_merchant)
+> [yuzhoujr.com](https://www.yuzhoujr.com) &nbsp;&middot;&nbsp;
+> GitHub [@yuzhoujr](https://github.com/yuzhoujr) &nbsp;&middot;&nbsp;
+> LinkedIn [@yuzhoujr](linkedin.com/in/yuzhoujr)
