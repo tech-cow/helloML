@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a><img src="/logo.png" alt="Temp Logo" width="200"></a>
+  <a><img src="https://github.com/yuzhoujr/helloML/blob/master/logo.jpg" alt="Temp Logo" width="200"></a>
   <br>
   Electron Markdownify
   <br>
