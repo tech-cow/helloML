@@ -1,10 +1,15 @@
 import pandas as pd
 import quandl, math
-import numpy as np
-from sklearn import preprocessing, cross_validation, svm
+import numpy as np # numpy array
+from sklearn import preprocessing
 from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+# Getting rid of some warining
+import warnings
+warnings.filterwarnings(action="ignore", module="scipy", message="^internal gelsd")
 
-
+# using preprocessing for scaling
+# using cross_validation/test_split to create a training and testing sample
 '''
 Using quandl.get to get a pandas data frame
 
@@ -43,26 +48,38 @@ forecast_out = int(math.ceil(0.01*len(df)))
 
 # Setting label feature to predict its Closing price 1% days into the future
 df['label'] = df[forecast_col].shift(-forecast_out)
+df.dropna(inplace = True)
 
-
-x = np.array(df.drop(['label'], 1))
+# X: feature
+# Y: label
+# df.drop returns a new copy of a dataFram
+# We want to return everything from our original dataframe except the label column
+X = np.array(df.drop(['label'], 1))
+y = np.array(df['label'])
+X = preprocessing.scale(X)  # Feature scaling
 y = np.array(df['label'])
 
-x = preprocessing.scale(x)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# classifier using LinearRegression w/ 97% accuracy
+clf = LinearRegression()
+clf.fit(X_train, y_train)
+accuracy = clf.score(X_test, y_test)
 
 
 
+print accuracy
 
 
 
 # Display
-
-print "\n"
-print "######################################################################"
-print "#    Display future closing price of a certain stock at given days   #"
-print "######################################################################"
-print "\n"
-
-print df.head()
-print "---------------------------------"
-print df.tail()
+#
+# print "\n"
+# print "######################################################################"
+# print "#    Display future closing price of a certain stock at given days   #"
+# print "######################################################################"
+# print "\n"
+#
+# print df.head()
+# print "---------------------------------"
+# print df.tail()
